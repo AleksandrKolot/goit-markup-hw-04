@@ -117,25 +117,38 @@ h1, h2, h3, h4, h5, h6{
  }
 /* main */
 /* Hero */
-/*   заменить цвет текста заголовков на белый
-сделать фон */
 
 .hero {
-  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  background-image: linear-gradient(
+  to right,
+rgba(47, 48, 58, 0.8), 
+rgba(47, 48, 58, 0.8)
+  ),
+  url('../image/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
-.container-hero {
+
+.content-hero {
   width: 646px;
 }
 .hero-title {
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
-  /* добавить цвет */
+  color: var(--hero-text-color);
   line-height: 1.36;
   
   letter-spacing: 0.06em;
@@ -258,6 +271,7 @@ width:calc((100% - 90px) / 4);
 }
 .list-team .item {
   width:calc((100% - 90px) / 4);
+  background-color: var(--primary-bg-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
   0px 1px 1px rgba(0, 0, 0, 0.14), 
   0px 1px 3px rgba(0, 0, 0, 0.12);
