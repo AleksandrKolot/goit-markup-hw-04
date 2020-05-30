@@ -22,12 +22,17 @@
       <ul class="contacts list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="mail">
-            <img src="./image/envelope.svg" alt="envelope"> info@devstudio.com
+              <svg class="link-icon" width="16px" height="11px" >
+                <use href="./image/sprite.svg#envelope"></use> 
+              </svg>
+             info@devstudio.com
             </a>
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="phone">
-            <img src="./image/tel.svg" alt="telephone">
+              <svg class="link-icon" width="10px" height="15px" >
+                <use href="./image/sprite.svg#tel"></use> 
+              </svg>
             +38 096 111 11 11
             </a>
           </li>
@@ -45,27 +50,43 @@
   
   <!-- секция наши преимущества -->
   <section class="advantages indent">
-    <div class="container ">
+    <div class="container">
       <!-- <h2>Наши преимущества</h2> -->
       <ul class="list-advantages list">
         <!-- вставить svg, после урока по svg -->
           <li class="item">
-            <a href="" aria-label="Ccылка на преимущество 1" class="link">спутниковая антенна</a>
-           <h3 class="advantages-title direct-title">Внимание к деталям</h3>
+            <div class="box-icon">
+              <svg class="icon" width="70px" height="70px">
+                <use href="./image/sprite.svg#antenna"></use> 
+              </svg>
+            </div>
+            <h3 class="advantages-title direct-title">Внимание к деталям</h3>
             <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
           <li class="item">
-           <a href="" aria-label="Ccылка на преимущество 2" class="link">циферблат часов</a>
+            <div class="box-icon">
+              <svg class="icon" width="70px" height="70px">
+                <use href="./image/sprite.svg#time"></use> 
+              </svg>
+            </div>
            <h3 class="advantages-title direct-title">Пунктуальность</h3>
            <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
           </li>
           <li class="item">
-            <a href="" aria-label="Ccылка на преимущество 3" class="link">ноутбук</a>
+            <div class="box-icon">
+              <svg class="icon" width="70px" height="70px">
+                <use href="./image/sprite.svg#computer"></use> 
+              </svg>
+            </div>
             <h3 class="advantages-title direct-title">Планирование</h3>
             <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
           <li class="item">
-            <a href="" aria-label="Ccылка на преимущество 4" class="link">космонавт летящий к звездам</a>
+            <div class="box-icon">
+              <svg class="icon" width="70px" height="70px">
+                <use href="./image/sprite.svg#astronaut"></use> 
+              </svg>
+            </div>
             <h3 class="advantages-title direct-title">Современные технологии</h3>
             <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
@@ -80,15 +101,15 @@
       <!-- картинки обернул в ссылки -->
       <ul class="list-work list">
         <li class="item">
-          <a href=""><img src="./image/desktop.jpg" alt="ноутбук" width="370" height="294"></a>
+          <img src="./image/desktop.jpg" class="picture" alt="ноутбук" width="370" height="294">
           <h3 class="work-title direct-title">Десктопные приложения</h3>
         </li>
         <li class="item">
-          <a href=""><img src="./image/mobile.jpg" alt="мобильный телефон" width="370" height="294"></a>
+          <img src="./image/mobile.jpg" alt="мобильный телефон" width="370" height="294">
           <h3 class="work-title direct-title">Мобильные приложения</h3>
         </li>
         <li class="item">
-          <a href=""><img src="./image/design.jpg" alt="монитор с черной картой мира" width="370" height="294"></a>
+          <img src="./image/design.jpg" alt="монитор с черной картой мира" width="370" height="294">
           <h3 class="work-title direct-title">Дизайнерские решения</h3>
         </li>
       </ul>
@@ -106,10 +127,34 @@
           <p class="profession text">Product Designer</p>
           <!-- вставить svg -->
           <ul class="public list">
-            <li class="item"><a href="" aria-label="Ccылка на Инстаграм"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Фейсбук"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Линкедин"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Твиттер"></a></li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Инстаграм">
+                <svg class="link-icon" width="20px" height="20px" >
+                  <use href="./image/sprite.svg#instagram"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Твиттер">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#twitter"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Фейсбук">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#facebook"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Линкедин">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#linkedin"></use> 
+                </svg>
+              </a>
+            </li>
           </ul>
         </li>
         <li class="item">
@@ -118,10 +163,34 @@
           <p class="profession text">Frontend Developer</p>
           <!-- вставить svg -->
           <ul class="public list">
-            <li class="item"><a href="" aria-label="Ccылка на Инстаграм"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Твиттер"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Фейсбук"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Линкедин"></a></li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Инстаграм">
+                <svg class="link-icon" width="20px" height="20px" >
+                  <use href="./image/sprite.svg#instagram"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Твиттер">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#twitter"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Фейсбук">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#facebook"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Линкедин">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#linkedin"></use> 
+                </svg>
+              </a>
+            </li>
           </ul>
         </li>
         <li class="item">
@@ -130,10 +199,34 @@
           <p class="profession text">Marketing</p>
           <!-- вставить svg -->
           <ul class="public list">
-            <li class="item"><a href="" aria-label="Ccылка на Инстаграм"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Твиттер"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Фейсбук"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Линкедин"></a></li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Инстаграм">
+                <svg class="link-icon" width="20px" height="20px" >
+                  <use href="./image/sprite.svg#instagram"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Твиттер">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#twitter"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Фейсбук">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#facebook"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Линкедин">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#linkedin"></use> 
+                </svg>
+              </a>
+            </li>
           </ul>
         </li>
         <li class="item">
@@ -142,10 +235,34 @@
           <p class="profession text">UI Designer</p>
           <!-- вставить svg -->
           <ul class="public list">
-            <li class="item"><a href="" aria-label="Ccылка на Инстаграм"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Твиттер"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Фейсбук"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Линкедин"></a></li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Инстаграм">
+                <svg class="link-icon" width="20px" height="20px" >
+                  <use href="./image/sprite.svg#instagram"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Твиттер">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#twitter"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Фейсбук">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#facebook"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Линкедин">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#linkedin"></use> 
+                </svg>
+              </a>
+            </li>
           </ul>
         </li>
       </ul>  
@@ -158,12 +275,48 @@
       <h2 class="main-title">Постоянные клиенты</h2>
     <!-- вставить лого настоящих компаний -->
       <ul class="list-clients list">
-        <li class="item"><a href="" aria-label="Ccылка на сайт компании 1">лого 1</a></li>
-        <li class="item"><a href="" aria-label="Ccылка на сайт компании 2">лого 2</a></li>
-        <li class="item"><a href="" aria-label="Ccылка на сайт компании 3">лого 3</a></li>
-        <li class="item"><a href="" aria-label="Ccылка на сайт компании 4">лого 4</a></li>
-        <li class="item"><a href="" aria-label="Ccылка на сайт компании 5">лого 5</a></li>
-        <li class="item"><a href="" aria-label="Ccылка на сайт компании 6">лого 6</a></li>
+        <li class="item">
+            <a href="" class="link box-icon" aria-label="Ccылка на сайт компании 1">
+              <svg class="link-icon" width="44px" height="49px" >
+                <use href="./image/sprite.svg#logo1"></use> 
+              </svg>
+            </a>
+        </li>
+        <li class="item">
+            <a href="" class="link box-icon" aria-label="Ccылка на сайт компании 2">
+              <svg class="link-icon" width="40px" height="52px" >
+                <use href="./image/sprite.svg#logo2"></use> 
+              </svg>
+            </a>
+        </li>
+        <li class="item">
+            <a href="" class="link box-icon" aria-label="Ccылка на сайт компании 3">
+              <svg class="link-icon" width="41px" height="43px" >
+                <use href="./image/sprite.svg#logo3"></use> 
+              </svg>
+            </a>
+        </li>
+        <li class="item">
+            <a href="" class="link box-icon" aria-label="Ccылка на сайт компании 4">
+              <svg class="link-icon" width="80px" height="42px" >
+                <use href="./image/sprite.svg#logo4"></use> 
+              </svg>
+            </a>
+        </li>
+        <li class="item">
+            <a href="" class="link box-icon" aria-label="Ccылка на сайт компании 5">
+              <svg class="link-icon" width="59px" height="47px" >
+                <use href="./image/sprite.svg#logo5"></use> 
+              </svg>
+            </a>
+        </li>
+        <li class="item">
+            <a href="" class="link box-icon" aria-label="Ccылка на сайт компании 6">
+              <svg class="link-icon" width="88px" height="45px" >
+                <use href="./image/sprite.svg#logo6"></use> 
+              </svg>
+            </a>
+        </li>
       </ul>
     </div> 
   </section>   
@@ -180,13 +333,38 @@
           <a href="tel:+380991111111" class="phone">+38 099 111 11 11</a>
           </address>
         </div>
+
         <div class="box-appeal">
           <p class="appeal text">присоединяйтесь</p>
           <ul class="public list">
-            <li class="item"><a href="" aria-label="Ccылка на Инстаграм"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Твиттер"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Фейсбук"></a></li>
-            <li class="item"><a href="" aria-label="Ccылка на Линкедин"></a></li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Инстаграм">
+                <svg class="link-icon" width="20px" height="20px" >
+                  <use href="./image/sprite.svg#instagram"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Твиттер">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#twitter"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Фейсбук">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#facebook"></use> 
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link" aria-label="Ccылка на Линкедин">
+                <svg class="link-icon" width="20px" height="20px">
+                  <use href="./image/sprite.svg#linkedin"></use> 
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
