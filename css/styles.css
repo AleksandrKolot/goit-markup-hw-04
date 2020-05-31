@@ -256,6 +256,7 @@ width:calc((100% - 90px) / 4);
   }
   /* после размещения текста на картинке оптимизировать */
   .list-work .picture {
+    display: block;
     border-radius: 4px;
   }
 
