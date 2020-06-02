@@ -58,7 +58,10 @@ h1, h2, h3, h4, h5, h6{
 }
 /* header */
 .header-bar {
-  border: 2px solid #ECECEC;
+  border-bottom: 2px solid #ECECEC;
+}
+.is-hidden {
+  border: hidden; 
 }
 .nav {
   display: block;
@@ -91,7 +94,24 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
   align-items: center;
 }
-.accent, .nav:focus, 
+.accent {
+  position: relative;
+  color: var(--accent-color)
+}
+.accent::before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+.nav:focus, 
 .nav:hover {
   color: var(--accent-color)
 }
@@ -175,7 +195,7 @@ rgba(47, 48, 58, 0.8)),
   letter-spacing: 0.06em;
 }
 
-/* Утилита отступ между секциями */
+/* Утилита отступ в секциях */
 .indent {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -203,13 +223,14 @@ rgba(47, 48, 58, 0.8)),
 }
 .advantages::after {
   content: "";
-  width: 1170px;
   position: absolute;
   margin: 0 auto;
   bottom: 0;
   left: 0;
   right: 0;
+
   
+  width: 1170px;
   border-bottom: 1px solid #ECECEC;
 }
 
